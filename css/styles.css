@@ -784,13 +784,19 @@ body {
 .nl-wrapper {
     display: flex;
     padding-top: 20px;
+    gap: 12px;
+}
+.nl-text + .nl-wrapper {
 }
 .nl-wrapper input {
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    padding: 15px 295px 15px 16px;
-    margin-right: 12px;
+    height: 50px;
+    width: 358px;
     background-color: var(--dark-background);
     font-size: 16px;
     line-height: 1.25;
@@ -819,9 +825,10 @@ body {
     width: 200px;
     height: 50px;
     cursor: pointer;
+    column-gap: 24px;
 }
+
 .icon-btn-nl {
     fill: var(--white-bg);
-    margin-left: 24px;
 }
 
