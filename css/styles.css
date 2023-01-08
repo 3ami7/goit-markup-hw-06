@@ -700,6 +700,9 @@ body {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--text-light-grey);
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rules-checkbox-icon {
@@ -711,7 +714,7 @@ body {
     left: 52px;
     top: 73.5%;
     transform: translateY(-73.5%);
-    transition-property: fill, border, opacity, background-color;
+    transition-property: fill, border, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -720,12 +723,8 @@ body {
     appearance: none;
   }
   .rules-checkbox-input + .rules-checkbox-icon {
-    opacity: 0;
+    fill: var(--text-white);
   }
-  .rules-checkbox-input:focus + .rules-checkbox-icon {
-    opacity:1;
-    }
-
   .rules-checkbox-input:checked + .rules-checkbox-icon {
     fill: var(--text-white);
     border: none;
@@ -793,8 +792,12 @@ body {
     padding: 15px 295px 15px 16px;
     margin-right: 12px;
     background-color: var(--dark-background);
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
-.nl-wrapper input[name="email"]::placeholder {
+.nl-wrapper input::placeholder {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
