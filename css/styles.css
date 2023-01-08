@@ -276,6 +276,7 @@ body {
 .set-card {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     background-color: var(--white-bg);
     list-style: none;
@@ -327,7 +328,7 @@ body {
     padding: 0 15px;
     display: flex;
     column-gap: 70px;
-    justify-content: baseline;
+    justify-content: space-around;
 }
 .footer-logo {
     font-family: 'Raleway';
